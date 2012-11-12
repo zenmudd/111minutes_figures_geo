@@ -65,6 +65,8 @@ class Parallelogramm < Quadrangle
 	def initialize(side_a, side_b, side_c = side_a, side_d = side_b)
 		@a = side_a
 		@b = side_b
+		@c = side_c
+		@d = side_d
 	end
 	
 	def area(angle_degrees = 90)
@@ -75,6 +77,15 @@ end
 
 #class Rectangle < Paralellogramm
 #end
+
+class Rhombus < Parallelogramm
+	def initialize(side_a, side_b = side_a, side_c = side_a, side_d = side_a)
+		@a = side_a
+		@b = side_b
+		@c = side_c
+		@d = side_d
+	end
+end
 
 
 
