@@ -87,7 +87,11 @@ class Rhombus < Parallelogramm
 	end
 end
 
-
+class Trapeze < Quadrangle
+	def area
+		(@a+@b)/2*Math.sqrt(@c**2 - (((@b-@a)**2 + @c**2 - @d**2)/(2*(@b-@a)))**2)
+	end
+end
 
 
 
