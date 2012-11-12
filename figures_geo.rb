@@ -50,7 +50,11 @@ class Quadrangle
 		@b = side_b
 		@c = side_c
 		@d = side_d
-		
+	end
+	
+	def perimeter
+		@a + @b + @c + @d
+	end
 end
 
 
