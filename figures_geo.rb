@@ -28,16 +28,19 @@ class Ellipse
 end
 
 class Triangle
-	def initialize
-		
+	def initialize(side_a, side_b, side_c)
+		@a = side_a
+		@b = side_b
+		@c = side_c
 	end
 	
 	def perimetr
-		
+		@a + @b + @c
 	end
 	
 	def area
-		
+		p = self.perimeter/2
+		Math.sqrt(p*(p-@a)*(p-@b)*(p-@c))
 	end
 end
 
