@@ -1,19 +1,19 @@
 class Cirlcle
 	def initialize(radius)
-		@radius = radius		
+		@r = radius		
 	end
 	
 	def circumference
-		
+		2*Math::PI*@r
 	end
 	
 	def area
-		
+		Math::PI*@r**2
 	end
 end
 
 class Ellipse
-	def initialize
+	def initialize()
 		
 	end
 	
