@@ -65,7 +65,6 @@ class Parallelogramm < Quadrangle
 	def initialize(side_a, side_b, side_c = side_a, side_d = side_b)
 		@a = side_a
 		@b = side_b
-		
 	end
 	
 	def area(angle_degrees = 90)
@@ -74,7 +73,8 @@ class Parallelogramm < Quadrangle
 	end	
 end
 
-
+#class Rectangle < Paralellogramm
+#end
 
 
 
