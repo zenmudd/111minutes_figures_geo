@@ -61,6 +61,27 @@ def Math::degree_to_radian(degree)
 	degree*Math::PI/180
 end
 
+class Parallelogramm < Quadrangle
+	def initialize(side_a, side_b, side_c = side_a, side_d = side_b)
+		@a = side_a
+		@b = side_b
+		
+	end
+	
+	def area(angle_degrees)
+		@alpha = Math.degree_to_radian(angle_degrees)
+		@a * @b * Math.sin(@alpha)
+	end	
+end
+
+
+
+
+
+
+
+
+
 
 
 
