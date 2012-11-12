@@ -13,16 +13,17 @@ class Cirlcle
 end
 
 class Ellipse
-	def initialize()
-		
+	def initialize(major_axis, minor_axis)
+		@a = major_axis/2
+		@b = minor_axis/2		
 	end
 	
 	def circumference
-		
+		4*( Math::PI*@a*@b + (@a - @b)**2 )/(@a + @b)
 	end
 	
 	def area
-		
+		Math::PI * @a *@b
 	end
 end
 
