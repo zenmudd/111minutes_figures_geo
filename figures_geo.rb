@@ -57,6 +57,10 @@ class Quadrangle
 	end
 end
 
+def Math::degree_to_radian(degree)
+	degree*Math::PI/180
+end
+
 
 
 
