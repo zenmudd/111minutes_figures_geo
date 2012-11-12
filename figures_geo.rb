@@ -68,7 +68,7 @@ class Parallelogramm < Quadrangle
 		
 	end
 	
-	def area(angle_degrees)
+	def area(angle_degrees = 90)
 		@alpha = Math.degree_to_radian(angle_degrees)
 		@a * @b * Math.sin(@alpha)
 	end	
