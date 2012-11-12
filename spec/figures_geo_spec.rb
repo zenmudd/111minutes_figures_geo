@@ -1,7 +1,7 @@
 describe Circle  do
 	describe "#initialize" do
 		it "should throw exception if radius value wasn't recieved" do
-			a = Circle.new.should throw(Err)
+			a = Circle.new.should throw(Err) 
 		end
 		
 	describe "#perimetr" do
