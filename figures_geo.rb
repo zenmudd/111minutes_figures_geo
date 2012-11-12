@@ -1,6 +1,6 @@
 class Cirlcle
-	def initialize
-		
+	def initialize(radius)
+		@radius = radius		
 	end
 	
 	def circumference
