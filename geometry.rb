@@ -1,4 +1,4 @@
-class Cirlcle
+class Circle
 	def initialize(radius)
 		@r = radius		
 	end
