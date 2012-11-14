@@ -92,7 +92,7 @@ describe Quadrangle do
 		it "should count perimeter" do
 			perimeter_ckecked = 28
 			perimeter = quadrangle.perimeter
-			expect(perimeter).to eq perimeter_checked
+			expect(perimeter).to eq perimeter_ckecked
 		end
 	end
 end
