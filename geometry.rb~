@@ -23,7 +23,7 @@ class Ellipse
 	end
 	
 	def area
-		(Math::PI * @a *@b).round 2
+		Math::PI * @a *@b
 	end
 end
 
@@ -40,7 +40,7 @@ class Triangle
 	
 	def area
 		p = self.perimeter/2
-		(Math.sqrt(p*(p-@a)*(p-@b)*(p-@c))). round 2
+		Math.sqrt(p*(p-@a)*(p-@b)*(p-@c))
 	end
 end
 
@@ -71,7 +71,7 @@ class Parallelogramm < Quadrangle
 	
 	def area(angle_degrees = 90)
 		@alpha = Math.degree_to_radian(angle_degrees)
-		(@a * @b * Math.sin(@alpha)).round 2
+		@a * @b * Math.sin(@alpha)
 	end	
 end
 
@@ -89,7 +89,7 @@ end
 
 class Trapeze < Quadrangle
 	def area
-		((@a+@b)/2*Math.sqrt(@c**2 - (((@b-@a)**2 + @c**2 - @d**2)/(2*(@b-@a)))**2)).round 2
+		(@a+@b)/2*Math.sqrt(@c**2 - (((@b-@a)**2 + @c**2 - @d**2)/(2*(@b-@a)))**2)
 	end
 end
 

@@ -121,7 +121,7 @@ describe Parallelogramm do
 	
 	describe "#area" do
 		it "should count parallelogramm area" do
-			area_checked = 20.78
+			area_checked = 2.54
 			area = parallelogramm.area(60)
 			expect(area).to eq area_checked
 		end
